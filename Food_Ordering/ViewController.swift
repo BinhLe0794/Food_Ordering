@@ -12,10 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let service = NetworkService()
-        let request = service.createRequest(route: .temp, method: .post, parameters: ["username":"huybinh", "password":"123123"])
-        print("urlRequest: \(request?.url)")
+     
+        var service = NetworkService.shared.myFirstRequest()
         
     }
 
