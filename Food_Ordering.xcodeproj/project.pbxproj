@@ -13,6 +13,8 @@
 		96EEC27928AE96EC00378B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC27728AE96EC00378B97 /* Main.storyboard */; };
 		96EEC27B28AE96EC00378B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC27A28AE96EC00378B97 /* Assets.xcassets */; };
 		96EEC27E28AE96EC00378B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC27C28AE96EC00378B97 /* LaunchScreen.storyboard */; };
+		96EEC28628AE9A0000378B97 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC28528AE9A0000378B97 /* .gitignore */; };
+		96EEC28828AE9A5700378B97 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC28728AE9A5700378B97 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		96EEC27A28AE96EC00378B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96EEC27D28AE96EC00378B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96EEC27F28AE96EC00378B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EEC28528AE9A0000378B97 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		96EEC28728AE9A5700378B97 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		96EEC26528AE96EC00378B97 = {
 			isa = PBXGroup;
 			children = (
+				96EEC28928AE9A6000378B97 /* Solutions */,
 				96EEC27028AE96EC00378B97 /* Food_Ordering */,
 				96EEC26F28AE96EC00378B97 /* Products */,
 			);
@@ -65,6 +70,15 @@
 				96EEC27F28AE96EC00378B97 /* Info.plist */,
 			);
 			path = Food_Ordering;
+			sourceTree = "<group>";
+		};
+		96EEC28928AE9A6000378B97 /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				96EEC28728AE9A5700378B97 /* README.md */,
+				96EEC28528AE9A0000378B97 /* .gitignore */,
+			);
+			name = Solutions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EEC28628AE9A0000378B97 /* .gitignore in Resources */,
 				96EEC27E28AE96EC00378B97 /* LaunchScreen.storyboard in Resources */,
+				96EEC28828AE9A5700378B97 /* README.md in Resources */,
 				96EEC27B28AE96EC00378B97 /* Assets.xcassets in Resources */,
 				96EEC27928AE96EC00378B97 /* Main.storyboard in Resources */,
 			);
