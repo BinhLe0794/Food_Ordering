@@ -8,5 +8,10 @@
         1. Collection View
             - Autolayout 
             - Select attribute [Estimate Size] = none 
+            - enable Page if wanna click to page and page
             - Create a [CollectionViewCell] by cocotouch
         2. Page Control 
+        
+        3. Bar Button Item -> Cart icon 
+        
+        4. Scroll View
