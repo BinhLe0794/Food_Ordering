@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AB17D79E20C79887CC9774D /* Pods_Food_Ordering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC715D5500580776DC72BB4 /* Pods_Food_Ordering.framework */; };
+		96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C03B6F28AF877C005FA1C7 /* CardView.swift */; };
 		96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27128AE96EC00378B97 /* AppDelegate.swift */; };
 		96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27328AE96EC00378B97 /* SceneDelegate.swift */; };
 		96EEC27928AE96EC00378B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC27728AE96EC00378B97 /* Main.storyboard */; };
@@ -28,9 +30,14 @@
 		96EEC2AB28AF6FE300378B97 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC2A928AF6FE300378B97 /* CategoryCollectionViewCell.swift */; };
 		96EEC2AC28AF6FE300378B97 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EEC2AA28AF6FE300378B97 /* CategoryCollectionViewCell.xib */; };
 		96EEC2AE28AF72CC00378B97 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC2AD28AF72CC00378B97 /* DishCategory.swift */; };
+		96FB614428AF74D600F50979 /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB614328AF74D600F50979 /* String_Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3737A0A189F75DEBFC9026D7 /* Pods-Food_Ordering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food_Ordering.release.xcconfig"; path = "Target Support Files/Pods-Food_Ordering/Pods-Food_Ordering.release.xcconfig"; sourceTree = "<group>"; };
+		5016C345B265C88B3FF71D45 /* Pods-Food_Ordering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food_Ordering.debug.xcconfig"; path = "Target Support Files/Pods-Food_Ordering/Pods-Food_Ordering.debug.xcconfig"; sourceTree = "<group>"; };
+		8DC715D5500580776DC72BB4 /* Pods_Food_Ordering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Ordering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C03B6F28AF877C005FA1C7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		96EEC26E28AE96EC00378B97 /* Food_Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_Ordering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EEC27128AE96EC00378B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96EEC27328AE96EC00378B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 		96EEC2A928AF6FE300378B97 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		96EEC2AA28AF6FE300378B97 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		96EEC2AD28AF72CC00378B97 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		96FB614328AF74D600F50979 /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,18 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB17D79E20C79887CC9774D /* Pods_Food_Ordering.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C03B6E28AF8768005FA1C7 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				96C03B6F28AF877C005FA1C7 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		96EEC26528AE96EC00378B97 = {
 			isa = PBXGroup;
 			children = (
 				96EEC28928AE9A6000378B97 /* Solutions */,
 				96EEC27028AE96EC00378B97 /* Food_Ordering */,
 				96EEC26F28AE96EC00378B97 /* Products */,
+				DCCEFAC5FCDA440824077A04 /* Pods */,
+				9E205EAEC3366908AFF00EE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +164,7 @@
 		96EEC29928AF229E00378B97 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				96C03B6E28AF8768005FA1C7 /* CardView */,
 				96EEC2A728AF6F6B00378B97 /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -163,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				96EEC29E28AF29EB00378B97 /* UIView_Extensions.swift */,
+				96FB614328AF74D600F50979 /* String_Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +213,23 @@
 			path = CategoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		9E205EAEC3366908AFF00EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC715D5500580776DC72BB4 /* Pods_Food_Ordering.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCCEFAC5FCDA440824077A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5016C345B265C88B3FF71D45 /* Pods-Food_Ordering.debug.xcconfig */,
+				3737A0A189F75DEBFC9026D7 /* Pods-Food_Ordering.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96EEC28228AE96EC00378B97 /* Build configuration list for PBXNativeTarget "Food_Ordering" */;
 			buildPhases = (
+				F6113E4A13CC1F2F04B14CCB /* [CP] Check Pods Manifest.lock */,
 				96EEC26A28AE96EC00378B97 /* Sources */,
 				96EEC26B28AE96EC00378B97 /* Frameworks */,
 				96EEC26C28AE96EC00378B97 /* Resources */,
+				62C17FF895FEF27D918CCED2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +301,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62C17FF895FEF27D918CCED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food_Ordering/Pods-Food_Ordering-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food_Ordering/Pods-Food_Ordering-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Food_Ordering/Pods-Food_Ordering-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6113E4A13CC1F2F04B14CCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food_Ordering-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96EEC26A28AE96EC00378B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -274,12 +356,14 @@
 				96EEC28C28AE9AB000378B97 /* NetworkService.swift in Sources */,
 				96EEC28E28AE9B0100378B97 /* Route.swift in Sources */,
 				96EEC29428AF118900378B97 /* ApiResponse.swift in Sources */,
+				96FB614428AF74D600F50979 /* String_Extensions.swift in Sources */,
 				96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */,
 				96EEC29228AEA5EB00378B97 /* AppError.swift in Sources */,
 				96EEC29C28AF230E00378B97 /* Onboarding_VC.swift in Sources */,
 				96EEC2A128AF2B2C00378B97 /* OnboardingSlide.swift in Sources */,
 				96EEC2A328AF2DB800378B97 /* Onboarding_CollectionViewCell.swift in Sources */,
 				96EEC2AB28AF6FE300378B97 /* CategoryCollectionViewCell.swift in Sources */,
+				96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */,
 				96EEC2A628AF65D800378B97 /* Home_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +506,7 @@
 		};
 		96EEC28328AE96EC00378B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5016C345B265C88B3FF71D45 /* Pods-Food_Ordering.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +536,7 @@
 		};
 		96EEC28428AE96EC00378B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3737A0A189F75DEBFC9026D7 /* Pods-Food_Ordering.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
