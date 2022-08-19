@@ -19,6 +19,8 @@
 		96EEC28E28AE9B0100378B97 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC28D28AE9B0100378B97 /* Route.swift */; };
 		96EEC29028AE9B0C00378B97 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC28F28AE9B0C00378B97 /* Method.swift */; };
 		96EEC29228AEA5EB00378B97 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29128AEA5EB00378B97 /* AppError.swift */; };
+		96EEC29428AF118900378B97 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29328AF118900378B97 /* ApiResponse.swift */; };
+		96EEC29628AF1C1700378B97 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29528AF1C1700378B97 /* ApiResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		96EEC28D28AE9B0100378B97 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		96EEC28F28AE9B0C00378B97 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		96EEC29128AEA5EB00378B97 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		96EEC29328AF118900378B97 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		96EEC29528AF1C1700378B97 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				96EEC27A28AE96EC00378B97 /* Assets.xcassets */,
 				96EEC27C28AE96EC00378B97 /* LaunchScreen.storyboard */,
 				96EEC27F28AE96EC00378B97 /* Info.plist */,
+				96EEC29528AF1C1700378B97 /* ApiResult.swift */,
 			);
 			path = Food_Ordering;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				96EEC28D28AE9B0100378B97 /* Route.swift */,
 				96EEC28F28AE9B0C00378B97 /* Method.swift */,
 				96EEC29128AEA5EB00378B97 /* AppError.swift */,
+				96EEC29328AF118900378B97 /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 				96EEC27628AE96EC00378B97 /* ViewController.swift in Sources */,
 				96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */,
 				96EEC29028AE9B0C00378B97 /* Method.swift in Sources */,
+				96EEC29628AF1C1700378B97 /* ApiResult.swift in Sources */,
 				96EEC28C28AE9AB000378B97 /* NetworkService.swift in Sources */,
 				96EEC28E28AE9B0100378B97 /* Route.swift in Sources */,
+				96EEC29428AF118900378B97 /* ApiResponse.swift in Sources */,
 				96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */,
 				96EEC29228AEA5EB00378B97 /* AppError.swift in Sources */,
 			);
