@@ -85,11 +85,16 @@ class Onboarding_VC: UIViewController,
     @IBAction func nextBtn_clicked(_ sender: UIButton) {
 
         if currentPage == slides.count - 1 {
+            let sbController = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
+            // cai dat thuoc tinh
+            sbController.modalPresentationStyle = .fullScreen
+            sbController.modalTransitionStyle = .flipHorizontal
+            //hien thi
+            present(sbController, animated: true)
             
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
-            print(indexPath)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
         pageControl.currentPage = currentPage
