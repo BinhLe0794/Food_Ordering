@@ -13,7 +13,7 @@ struct NetworkService {
     
     private init(){}
     
-    func myFirstRequest(completion : @escaping (Result<ApiResult,Error>) -> Void) {
+    func myFirstRequest(completion : @escaping (Result<UserToken,Error>) -> Void) {
         request(route: .temp, method: .post,parameters: ["username":"123","password":"123"], completion: completion)
     }
     
@@ -64,7 +64,7 @@ struct NetworkService {
                 return
             }
             
-            if let decodedData = response.data {
+            if let decodedData = response.ResultObj {
                 completion(.success(decodedData))
             }else {
                 completion(.failure(AppError.errorDecoding))

@@ -38,6 +38,11 @@ class Home_VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NetworkService.shared.myFirstRequest { data in
+            print("data is: \(data)")
+        }
+        
         registerCell()
     }
 

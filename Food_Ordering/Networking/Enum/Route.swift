@@ -10,12 +10,12 @@ import Foundation
 enum Route {
     static let baseUrl = "http://localhost:4000"
     
-    case temp
+    case fetchAllCategories
     
     var description : String {
         // tự động tham chiếu tới chính nó
         switch self {
-        case .temp: return "/register"
+        case .fetchAllCategories : return "/dish-categories"
         }
     }
 }

@@ -20,6 +20,7 @@
 		9697EF3028B08F260047C843 /* LishDishes_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF2F28B08F260047C843 /* LishDishes_VC.swift */; };
 		9697EF3328B098800047C843 /* ListOrder_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3228B098800047C843 /* ListOrder_VC.swift */; };
 		9697EF3528B09A0B0047C843 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3428B09A0B0047C843 /* Order.swift */; };
+		9697EF3828B0BB2D0047C843 /* Usertoken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3728B0BB2D0047C843 /* Usertoken.swift */; };
 		96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C03B6F28AF877C005FA1C7 /* CardView.swift */; };
 		96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27128AE96EC00378B97 /* AppDelegate.swift */; };
 		96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27328AE96EC00378B97 /* SceneDelegate.swift */; };
@@ -33,7 +34,6 @@
 		96EEC29028AE9B0C00378B97 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC28F28AE9B0C00378B97 /* Method.swift */; };
 		96EEC29228AEA5EB00378B97 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29128AEA5EB00378B97 /* AppError.swift */; };
 		96EEC29428AF118900378B97 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29328AF118900378B97 /* ApiResponse.swift */; };
-		96EEC29628AF1C1700378B97 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29528AF1C1700378B97 /* ApiResult.swift */; };
 		96EEC29C28AF230E00378B97 /* Onboarding_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29B28AF230E00378B97 /* Onboarding_VC.swift */; };
 		96EEC29F28AF29EB00378B97 /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC29E28AF29EB00378B97 /* UIView_Extensions.swift */; };
 		96EEC2A128AF2B2C00378B97 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC2A028AF2B2C00378B97 /* OnboardingSlide.swift */; };
@@ -61,6 +61,7 @@
 		9697EF2F28B08F260047C843 /* LishDishes_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LishDishes_VC.swift; sourceTree = "<group>"; };
 		9697EF3228B098800047C843 /* ListOrder_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrder_VC.swift; sourceTree = "<group>"; };
 		9697EF3428B09A0B0047C843 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		9697EF3728B0BB2D0047C843 /* Usertoken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usertoken.swift; sourceTree = "<group>"; };
 		96C03B6F28AF877C005FA1C7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		96EEC26E28AE96EC00378B97 /* Food_Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_Ordering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EEC27128AE96EC00378B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		96EEC28F28AE9B0C00378B97 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		96EEC29128AEA5EB00378B97 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		96EEC29328AF118900378B97 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
-		96EEC29528AF1C1700378B97 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 		96EEC29B28AF230E00378B97 /* Onboarding_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding_VC.swift; sourceTree = "<group>"; };
 		96EEC29E28AF29EB00378B97 /* UIView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
 		96EEC2A028AF2B2C00378B97 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -159,6 +159,16 @@
 			path = ListOrder;
 			sourceTree = "<group>";
 		};
+		9697EF3628B0B3CD0047C843 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				96EEC28D28AE9B0100378B97 /* Route.swift */,
+				96EEC28F28AE9B0C00378B97 /* Method.swift */,
+				96EEC29128AEA5EB00378B97 /* AppError.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		96C03B6E28AF8768005FA1C7 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +210,6 @@
 				96EEC27A28AE96EC00378B97 /* Assets.xcassets */,
 				96EEC27C28AE96EC00378B97 /* LaunchScreen.storyboard */,
 				96EEC27F28AE96EC00378B97 /* Info.plist */,
-				96EEC29528AF1C1700378B97 /* ApiResult.swift */,
 			);
 			path = Food_Ordering;
 			sourceTree = "<group>";
@@ -217,10 +226,8 @@
 		96EEC28A28AE9A9400378B97 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9697EF3628B0B3CD0047C843 /* Enum */,
 				96EEC28B28AE9AB000378B97 /* NetworkService.swift */,
-				96EEC28D28AE9B0100378B97 /* Route.swift */,
-				96EEC28F28AE9B0C00378B97 /* Method.swift */,
-				96EEC29128AEA5EB00378B97 /* AppError.swift */,
 				96EEC29328AF118900378B97 /* ApiResponse.swift */,
 			);
 			path = Networking;
@@ -233,6 +240,7 @@
 				96EEC2AD28AF72CC00378B97 /* DishCategory.swift */,
 				965F9A3728AFE3F60044EF42 /* Dish.swift */,
 				9697EF3428B09A0B0047C843 /* Order.swift */,
+				9697EF3728B0BB2D0047C843 /* Usertoken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -443,13 +451,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9697EF3828B0BB2D0047C843 /* Usertoken.swift in Sources */,
 				9697EF3328B098800047C843 /* ListOrder_VC.swift in Sources */,
 				96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */,
 				96EEC2AE28AF72CC00378B97 /* DishCategory.swift in Sources */,
 				9697EF2128B063B10047C843 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				96EEC29028AE9B0C00378B97 /* Method.swift in Sources */,
 				96EEC29F28AF29EB00378B97 /* UIView_Extensions.swift in Sources */,
-				96EEC29628AF1C1700378B97 /* ApiResult.swift in Sources */,
 				9697EF3028B08F260047C843 /* LishDishes_VC.swift in Sources */,
 				96EEC28C28AE9AB000378B97 /* NetworkService.swift in Sources */,
 				96EEC28E28AE9B0100378B97 /* Route.swift in Sources */,
