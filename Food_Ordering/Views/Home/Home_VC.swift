@@ -26,7 +26,7 @@ class Home_VC: UIViewController {
     
     var populars : [Dish] = [
         .init(id: "id1", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017 - https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
         .init(id: "id3", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
     ]
     
@@ -53,6 +53,7 @@ class Home_VC: UIViewController {
     }
 }
 extension Home_VC : UICollectionViewDataSource,UICollectionViewDelegate{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch collectionView {
@@ -91,5 +92,17 @@ extension Home_VC : UICollectionViewDataSource,UICollectionViewDelegate{
         
        
     }
-
-}
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView{
+            
+        }else {
+            let controller = DishDetail_VC.instantiate()
+            
+            controller.dish = collectionView == popularCollectionview ? populars[indexPath.row] : specials[indexPath.row]
+            
+            navigationController?.pushViewController(controller, animated: true)
+            
+        }
+    }
+}//end extension

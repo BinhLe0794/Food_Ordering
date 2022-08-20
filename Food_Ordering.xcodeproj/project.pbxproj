@@ -13,6 +13,8 @@
 		965F9A3828AFE3F60044EF42 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F9A3728AFE3F60044EF42 /* Dish.swift */; };
 		9697EF2128B063B10047C843 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF1F28B063B10047C843 /* DishLandscapeCollectionViewCell.swift */; };
 		9697EF2228B063B10047C843 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9697EF2028B063B10047C843 /* DishLandscapeCollectionViewCell.xib */; };
+		9697EF2528B0709C0047C843 /* DishDetail_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF2428B0709C0047C843 /* DishDetail_VC.swift */; };
+		9697EF2728B077070047C843 /* UIViewController_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF2628B077070047C843 /* UIViewController_extension.swift */; };
 		96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C03B6F28AF877C005FA1C7 /* CardView.swift */; };
 		96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27128AE96EC00378B97 /* AppDelegate.swift */; };
 		96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27328AE96EC00378B97 /* SceneDelegate.swift */; };
@@ -47,6 +49,8 @@
 		965F9A3728AFE3F60044EF42 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		9697EF1F28B063B10047C843 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9697EF2028B063B10047C843 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		9697EF2428B0709C0047C843 /* DishDetail_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetail_VC.swift; sourceTree = "<group>"; };
+		9697EF2628B077070047C843 /* UIViewController_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_extension.swift; sourceTree = "<group>"; };
 		96C03B6F28AF877C005FA1C7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		96EEC26E28AE96EC00378B97 /* Food_Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_Ordering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EEC27128AE96EC00378B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 				9697EF2028B063B10047C843 /* DishLandscapeCollectionViewCell.xib */,
 			);
 			path = DishLandscapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9697EF2328B070700047C843 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9697EF2428B0709C0047C843 /* DishDetail_VC.swift */,
+			);
+			path = DishDetail;
 			sourceTree = "<group>";
 		};
 		96C03B6E28AF8768005FA1C7 /* CardView */ = {
@@ -184,6 +196,7 @@
 		96EEC29828AF229700378B97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9697EF2328B070700047C843 /* DishDetail */,
 				96EEC2A428AF65AB00378B97 /* Home */,
 				96EEC29A28AF22B200378B97 /* Onboarding */,
 			);
@@ -213,6 +226,7 @@
 			children = (
 				96EEC29E28AF29EB00378B97 /* UIView_Extensions.swift */,
 				96FB614328AF74D600F50979 /* String_Extensions.swift */,
+				9697EF2628B077070047C843 /* UIViewController_extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -390,6 +404,7 @@
 				96EEC28C28AE9AB000378B97 /* NetworkService.swift in Sources */,
 				96EEC28E28AE9B0100378B97 /* Route.swift in Sources */,
 				96EEC29428AF118900378B97 /* ApiResponse.swift in Sources */,
+				9697EF2528B0709C0047C843 /* DishDetail_VC.swift in Sources */,
 				96FB614428AF74D600F50979 /* String_Extensions.swift in Sources */,
 				96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */,
 				965F9A3828AFE3F60044EF42 /* Dish.swift in Sources */,
@@ -400,6 +415,7 @@
 				96EEC2AB28AF6FE300378B97 /* CategoryCollectionViewCell.swift in Sources */,
 				96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */,
 				96EEC2A628AF65D800378B97 /* Home_VC.swift in Sources */,
+				9697EF2728B077070047C843 /* UIViewController_extension.swift in Sources */,
 				965F9A3528AFDF760044EF42 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
