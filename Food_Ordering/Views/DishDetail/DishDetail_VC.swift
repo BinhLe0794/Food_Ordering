@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ProgressHUD
+
 
 class DishDetail_VC: UIViewController {
 
@@ -32,5 +34,12 @@ class DishDetail_VC: UIViewController {
     
     @IBAction func placeOrderBtn_Clicked(_ sender: Any) {
         
-    }
+        guard let name  = nameField.text?.trimmingCharacters(in: .whitespaces),
+              !name .isEmpty else {
+            ProgressHUD.showError("Please enter the name")
+            return
+        }
+        ProgressHUD.showSuccess("Order \(name) Successfully", interaction: true)
+        
+     }
 }
