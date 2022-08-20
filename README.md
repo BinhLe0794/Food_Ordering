@@ -14,6 +14,10 @@
                 + Map the components like label or image to CollectionViewCell
                 + Config the [Class] for View as CardView
                 + Config the [Collection Reuseable View] as the name of the CollectionViewCell
+        1.1 Table View
+            - Config Separator
+            - Background Color = Clear
+            - Editing: No selection during editing
         2. Page Control 
             + Just set the currentPage property for display
         3. Bar Button Item -> Cart icon 

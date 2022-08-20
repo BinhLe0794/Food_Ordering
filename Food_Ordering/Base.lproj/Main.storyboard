@@ -325,8 +325,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home View" id="UXq-v4-g8a">
+                        <barButtonItem key="backBarButtonItem" title=" " id="1vK-uk-LP8"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill" catalog="system" id="spy-Ar-gH2">
                             <color key="tintColor" red="0.87869018320000003" green="0.22575575110000001" blue="0.0042923004370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="bnO-zi-Eb0" kind="show" id="sWt-Nr-FuO"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -441,7 +445,7 @@ UGxhY2UgEE9yZGVyA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuY-sP-z2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468.6915887850464" y="66.738660907127439"/>
+            <point key="canvasLocation" x="3400" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c1h-de-2lz">
@@ -493,7 +497,42 @@ UGxhY2UgEE9yZGVyA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3A-Zr-6rL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3263.5514018691588" y="61.555075593952488"/>
+            <point key="canvasLocation" x="2511" y="-284"/>
+        </scene>
+        <!--List OrderVC-->
+        <scene sceneID="zlh-X8-GKi">
+            <objects>
+                <viewController storyboardIdentifier="ListOrder_VC" id="bnO-zi-Eb0" customClass="ListOrder_VC" customModule="Food_Ordering" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAw-PW-3Gq">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hI3-ga-pvu">
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bnO-zi-Eb0" id="HMd-gz-vYd"/>
+                                    <outlet property="delegate" destination="bnO-zi-Eb0" id="yA1-Q9-oMC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kfb-bR-7tV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hI3-ga-pvu" firstAttribute="trailing" secondItem="Kfb-bR-7tV" secondAttribute="trailing" id="FGJ-tM-DZv"/>
+                            <constraint firstAttribute="bottom" secondItem="hI3-ga-pvu" secondAttribute="bottom" id="hZ9-6W-szL"/>
+                            <constraint firstItem="hI3-ga-pvu" firstAttribute="top" secondItem="Kfb-bR-7tV" secondAttribute="top" id="jZg-oR-IW2"/>
+                            <constraint firstItem="hI3-ga-pvu" firstAttribute="leading" secondItem="Kfb-bR-7tV" secondAttribute="leading" id="owa-xo-wBK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LgH-Bt-qzZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="hI3-ga-pvu" id="Vbo-cq-f1q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWP-xC-O2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2510.7476635514017" y="425.70194384449246"/>
         </scene>
     </scenes>
     <resources>

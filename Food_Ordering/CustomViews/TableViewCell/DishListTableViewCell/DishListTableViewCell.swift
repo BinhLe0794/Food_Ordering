@@ -24,4 +24,12 @@ class DishListTableViewCell: UITableViewCell {
         dishTitleLbl.text = dishCategory.name
         descriptionLbl.text = dishCategory.description
     }
+    
+    func setup(Order: Order){
+        
+        dishImageView.kf.setImage(with: Order.dish?.image?.asUrl)
+        
+        dishTitleLbl.text = Order.name
+        descriptionLbl.text = Order.dish?.description
+    }
 }
