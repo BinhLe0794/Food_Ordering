@@ -12,8 +12,11 @@
             - Create a [CollectionViewCell] by cocotouch include 
                 + AutoLayout
                 + Map the components like label or image to CollectionViewCell
+                + Config the [Class] for View as CardView
+                + Config the [Collection Reuseable View] as the name of the CollectionViewCell
         2. Page Control 
-        
+            + Just set the currentPage property for display
         3. Bar Button Item -> Cart icon 
-        
+            + Put it into the navigation bar as the button
         4. Scroll View
+            + 
