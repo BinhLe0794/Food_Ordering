@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="-76" y="62"/>
         </scene>
-        <!--Heaven-->
+        <!--Home View-->
         <scene sceneID="wkg-1r-vZB">
             <objects>
                 <viewController id="HG1-At-616" customClass="Home_VC" customModule="Food_Ordering" customModuleProvider="target" sceneMemberID="viewController">
@@ -324,7 +324,7 @@
                             <constraint firstItem="q5A-4s-Zkm" firstAttribute="trailing" secondItem="gfE-b0-AGI" secondAttribute="trailing" id="XuQ-JM-Cx0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Heaven" id="UXq-v4-g8a">
+                    <navigationItem key="navigationItem" title="Home View" id="UXq-v4-g8a">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill" catalog="system" id="spy-Ar-gH2">
                             <color key="tintColor" red="0.87869018320000003" green="0.22575575110000001" blue="0.0042923004370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
@@ -460,6 +460,40 @@ UGxhY2UgEE9yZGVyA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXX-nk-MtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876" y="62"/>
+        </scene>
+        <!--Lish DishesVC-->
+        <scene sceneID="dY6-OV-vpN">
+            <objects>
+                <viewController storyboardIdentifier="LishDishes_VC" id="1lV-LW-GTS" customClass="LishDishes_VC" customModule="Food_Ordering" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xNa-vl-CF3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tr3-ih-rsG">
+                                <rect key="frame" x="0.0" y="44" width="428" height="882"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1lV-LW-GTS" id="KEs-cz-3q8"/>
+                                    <outlet property="delegate" destination="1lV-LW-GTS" id="XTo-A1-TLl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qYq-C8-2KI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tr3-ih-rsG" firstAttribute="top" secondItem="qYq-C8-2KI" secondAttribute="top" id="9xM-05-Nxq"/>
+                            <constraint firstItem="Tr3-ih-rsG" firstAttribute="trailing" secondItem="qYq-C8-2KI" secondAttribute="trailing" id="HjU-ti-vmP"/>
+                            <constraint firstItem="Tr3-ih-rsG" firstAttribute="leading" secondItem="qYq-C8-2KI" secondAttribute="leading" id="eWn-ah-JQI"/>
+                            <constraint firstAttribute="bottom" secondItem="Tr3-ih-rsG" secondAttribute="bottom" id="wVi-No-CnP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Tr3-ih-rsG" id="MFa-Je-hWh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3A-Zr-6rL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3263.5514018691588" y="61.555075593952488"/>
         </scene>
     </scenes>
     <resources>

@@ -95,7 +95,11 @@ extension Home_VC : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView{
+            let controller = LishDishes_VC.instantiate()
             
+            controller.category = categories[indexPath.row]
+            
+            navigationController?.pushViewController(controller, animated: true)
         }else {
             let controller = DishDetail_VC.instantiate()
             
