@@ -14,10 +14,28 @@ struct NetworkService {
     private init(){}
     
     func myFirstRequest(completion : @escaping (Result<UserToken,Error>) -> Void) {
-        request(route: .temp, method: .post,parameters: ["username":"123","password":"123"], completion: completion)
+        request(route: .fetchAllCategories, method: .post,parameters: ["username":"123","password":"123"], completion: completion)
     }
     
-    func request<T:Decodable> (route : Route,
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
+    }
+    
+    func placeOrder(dishId: String, name: String, completion: @escaping(Result<Order, Error>) -> Void) {
+        let params = ["name": name]
+        
+        request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+    }
+    
+    func fetchCategoryDishes(categoryId: String, completion: @escaping(Result<[Dish], Error>) -> Void) {
+        request(route: .fetchCategoryDishes(categoryId), method: .get, completion: completion)
+    }
+    
+    func fetchOrders(completion: @escaping(Result<[Order], Error>) -> Void) {
+        request(route: .fetchOrders, method: .get, completion: completion)
+    }
+    
+    func request<T: Decodable> (route : Route,
                                      method : Method,
                                      parameters : [String:Any]? = nil,
                                      completion : @escaping (Result<T,Error>) -> Void ) {
@@ -44,7 +62,7 @@ struct NetworkService {
         }.resume()
     }
     
-      func handleResponse<T : Decodable>(result: Result<Data,Error>?,
+      func handleResponse<T: Decodable>(result: Result<Data,Error>?,
                                                completion: (Result<T,Error>) -> Void ){
         guard let result = result else {
             completion(.failure(AppError.unknownError))
@@ -54,17 +72,19 @@ struct NetworkService {
         switch result {
         case .success(let data):
             let decoder = JSONDecoder()
-            guard let response = try? decoder.decode(ApiResponse<T>.self, from: data) else {
+            let response = try? decoder.decode(ApiResponse<T>.self, from: data)
+            
+            guard response != nil  else {
                 completion(.failure(AppError.errorDecoding))
                 return
             }
             
-            if let error = response.error{
+            if let error = response?.error{
                 completion(.failure(AppError.serverError(error)))
                 return
             }
             
-            if let decodedData = response.ResultObj {
+            if let decodedData = response?.data {
                 completion(.success(decodedData))
             }else {
                 completion(.failure(AppError.errorDecoding))

@@ -8,8 +8,8 @@
 import Foundation
 
 struct ApiResponse<T: Decodable> : Decodable {
-    let Status : Int
-    let Message : String?
-    let ResultObj : T?
-    let error : String?
+    let status: Int
+    let message: String?
+    let data: T?
+    let error: String?
 }

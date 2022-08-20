@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ProgressHUD
+
 
 class Home_VC: UIViewController {
 
@@ -15,35 +17,66 @@ class Home_VC: UIViewController {
     
     @IBOutlet weak var specialCollectionView: UICollectionView!
     
-    var categories : [DishCategory] = [
-        .init(id: "id1", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-        .init(id: "id2", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-        .init(id: "id3", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-        .init(id: "id4", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-        .init(id: "id5", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-        .init(id: "id6", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
-    ]
-    
-    var populars : [Dish] = [
-        .init(id: "id1", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017 - https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-        .init(id: "id3", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-    ]
-    
-    var specials : [Dish] = [
-        .init(id: "id1", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-        .init(id: "id3", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
-    ]
-    
+//    var categories : [DishCategory] = [
+//        .init(id: "id1", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//        .init(id: "id2", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//        .init(id: "id3", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//        .init(id: "id4", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//        .init(id: "id5", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//        .init(id: "id6", name: "Salas", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"),
+//    ]
+//
+//    var populars : [Dish] = [
+//        .init(id: "id1", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017 - https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//        .init(id: "id3", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//    ]
+//
+//    var specials : [Dish] = [
+//        .init(id: "id1", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//        .init(id: "id2", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//        .init(id: "id3", name: "Beafsteak", description: "Published on September 6, 2017", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", calories: 200),
+//    ]
+    var categories : [DishCategory] = []
+    var populars : [Dish] = []
+    var specials : [Dish] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NetworkService.shared.myFirstRequest { data in
-            print("data is: \(data)")
-        }
+
+//        NetworkService.shared.myFirstRequest { data in
+//
+//            switch data {
+//            case .success(let data):
+//                print("data is: \(data)")
+//
+//            case .failure(let error):
+//                ProgressHUD.showSuccess(error.localizedDescription, interaction: true)
+//                print("error")
+//            }
+//        }
         
         registerCell()
+        ProgressHUD.show()
+        
+        NetworkService.shared.fetchAllCategories { [weak self] resultApi in
+            switch resultApi {
+            case .success(let allDishes):
+                print(allDishes)
+                ProgressHUD.dismiss()
+                // Get json data
+                self?.categories = allDishes.categories ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specials = allDishes.specials ?? []
+                //update to the UI
+                self?.categoryCollectionView.reloadData()
+                self?.popularCollectionview.reloadData()
+                self?.specialCollectionView.reloadData()
+            case .failure(let error):
+                print("Error ->>>> \(error.localizedDescription)")
+            }
+        }
+        
     }
 
     private func registerCell(){
