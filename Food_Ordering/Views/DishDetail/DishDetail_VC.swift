@@ -39,6 +39,7 @@ class DishDetail_VC: UIViewController {
             ProgressHUD.showError("Please enter the name")
             return
         }
+        UserDefaults.standard.isHome = false
         ProgressHUD.showSuccess("Order \(name) Successfully", interaction: true)
         
      }

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIViewController{
+extension UIViewController {
     // return the name of the Controller
     static var identifier: String{
         return String(describing: self)

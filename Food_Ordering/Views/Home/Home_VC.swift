@@ -62,7 +62,7 @@ class Home_VC: UIViewController {
         NetworkService.shared.fetchAllCategories { [weak self] resultApi in
             switch resultApi {
             case .success(let allDishes):
-                print(allDishes)
+//                print(allDishes)
                 ProgressHUD.dismiss()
                 // Get json data
                 self?.categories = allDishes.categories ?? []

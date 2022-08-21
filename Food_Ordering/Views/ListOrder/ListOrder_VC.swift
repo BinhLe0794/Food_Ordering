@@ -21,7 +21,9 @@ class ListOrder_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Orders"
-        // Do any additional setup after loading the view.
+        
+        
+        
         registerCells()
         ProgressHUD.show()
         NetworkService.shared.fetchOrders { [weak self] resultApi in

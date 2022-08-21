@@ -22,6 +22,7 @@
 		9697EF3528B09A0B0047C843 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3428B09A0B0047C843 /* Order.swift */; };
 		9697EF3828B0BB2D0047C843 /* Usertoken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3728B0BB2D0047C843 /* Usertoken.swift */; };
 		9697EF3A28B0C7130047C843 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3928B0C7130047C843 /* AllDishes.swift */; };
+		96A6853928B1D0AC00F56B39 /* UserDefaults_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6853828B1D0AC00F56B39 /* UserDefaults_Extensions.swift */; };
 		96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C03B6F28AF877C005FA1C7 /* CardView.swift */; };
 		96EEC27228AE96EC00378B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27128AE96EC00378B97 /* AppDelegate.swift */; };
 		96EEC27428AE96EC00378B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEC27328AE96EC00378B97 /* SceneDelegate.swift */; };
@@ -64,6 +65,7 @@
 		9697EF3428B09A0B0047C843 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		9697EF3728B0BB2D0047C843 /* Usertoken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usertoken.swift; sourceTree = "<group>"; };
 		9697EF3928B0C7130047C843 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		96A6853828B1D0AC00F56B39 /* UserDefaults_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults_Extensions.swift; sourceTree = "<group>"; };
 		96C03B6F28AF877C005FA1C7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		96EEC26E28AE96EC00378B97 /* Food_Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_Ordering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EEC27128AE96EC00378B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				96EEC29E28AF29EB00378B97 /* UIView_Extensions.swift */,
 				96FB614328AF74D600F50979 /* String_Extensions.swift */,
 				9697EF2628B077070047C843 /* UIViewController_extension.swift */,
+				96A6853828B1D0AC00F56B39 /* UserDefaults_Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				96C03B7028AF877C005FA1C7 /* CardView.swift in Sources */,
 				96EEC2A628AF65D800378B97 /* Home_VC.swift in Sources */,
 				9697EF2728B077070047C843 /* UIViewController_extension.swift in Sources */,
+				96A6853928B1D0AC00F56B39 /* UserDefaults_Extensions.swift in Sources */,
 				965F9A3528AFDF760044EF42 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
